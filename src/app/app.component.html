@@ -11,9 +11,13 @@
 <h2>Here is a link to help you start:</h2>
 
 <div>
-  <a href="https://angular.io/tutorial" onClick="buttonError()" id="button"
+  <a href="https://angular.io/tutorial" onClick="causeError()" id="button"
     >Tutorial</a
   >
+
+  <!--click on button above produced ReferenceError on Sentry HTMLAnchorElement.onclick(http://localhost:4200/)
+    causeError is not defined. 
+  -->
 </div>
 <router-outlet></router-outlet>
 
